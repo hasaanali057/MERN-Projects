@@ -1,0 +1,67 @@
+.logoImage {
+  width: 170px;
+  margin: -20px
+}
+
+Button{
+  background-color: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+
+.Labels {
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.ErrorMessage{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 12px!important;
+  line-height: 1.5!important;
+  color: red;
+}
+
+.conitnueMessage{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 12px!important;
+  line-height: 1.5!important;
+  margin-top: 18px!important;
+}
+
+a{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  text-decoration: none!important;
+}
+
+a:hover{
+  color: #DF9B00;
+  text-decoration: underline;
+}
+
+.TopLabel{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+label{
+  display: block!important;
+}
+
+.inputField{
+  padding: 3px 7px;
+  height: 10px!important;
+  font-size: small;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input
+{
+  height: 2px!important;
+}
+

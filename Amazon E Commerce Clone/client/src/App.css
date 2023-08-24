@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+*{
+  font-family: "Amazon Ember",Arial,sans-serif;  
+}
+
+p{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 12px;
+}
+
+a{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 12px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input
+{
+  height: 20px!important;
+  padding: 7px 5px!important;
+  font-size: 13px!important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:invalid
+{
+  height: 20px!important;
+  padding: 7px 5px!important;
+}
+
+.css-1o8irtb-MuiButtonBase-root-MuiButton-root
+{
+  width: 294px!important;
+  height: 29px!important;
+  border-radius:7px!important;
+  box-shadow: none!important;
+}

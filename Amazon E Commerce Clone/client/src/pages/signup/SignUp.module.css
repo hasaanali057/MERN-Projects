@@ -1,0 +1,40 @@
+.SignUp-Box {
+  text-align: left!important;
+}
+
+.logoImage {
+  width: 170px;
+  margin: -20px
+}
+
+/* p{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  margin-top: 18px!important;
+  font-size: 12px!important;
+  line-height: 1.5!important;
+  margin-top: 18px!important;
+} */
+
+.ErrorMessage{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 12px!important;
+  line-height: 1.5!important;
+  color: red;
+}
+
+.conitnueMessage{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 12px!important;
+  line-height: 1.5!important;
+  margin-top: 18px!important;
+}
+
+a{
+  font-family: "Amazon Ember",Arial,sans-serif;
+  text-decoration: none!important;
+}
+
+a:hover{
+  color: #DF9B00;
+  text-decoration: underline;
+}

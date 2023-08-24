@@ -1,0 +1,13 @@
+{
+    "key" :{
+        "SignIn" : "Sign in",
+        "LogIn" : "Log in",
+        "SignUp" : "Sign up"
+    },
+    "messages": {
+        "new_user": "Don't have an Account?",
+        "old_user": "Already have an Account?",
+        "forgotPassword": "Forgot Password?",
+        "createAccount": "Create Account"
+    }
+}

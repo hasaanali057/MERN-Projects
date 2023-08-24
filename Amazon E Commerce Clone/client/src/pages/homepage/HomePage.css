@@ -1,0 +1,12 @@
+
+
+.productsSpace{
+  width: 100%;
+  height: 400px;
+  /* display: flex;
+  flex-direct3on: column; */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+  gap: 10px;
+}

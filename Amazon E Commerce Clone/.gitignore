@@ -1,0 +1,14 @@
+#node Modules ignored
+**/*/node_modules/
+
+node_modules
+
+/node_modules
+
+node_modules/
+
+#dot env ignored
+.env
+
+#logs file ignored
+server/logs

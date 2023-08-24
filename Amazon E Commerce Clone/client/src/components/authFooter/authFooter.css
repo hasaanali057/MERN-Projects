@@ -1,0 +1,7 @@
+#sign-up-page-footer{
+  border: none;
+  padding: 0;
+}
+#sign-up-page-footer > span{
+  font-size: smaller;
+}
