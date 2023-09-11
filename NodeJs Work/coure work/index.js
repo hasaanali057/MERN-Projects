@@ -8,8 +8,8 @@ const db = require('./src/mySqlModels');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const dbconnect = require ('./config/mongoConnection');
-//dbconnect();
+// const dbconnect = require ('./config/mongoConnection');
+// dbconnect();
 
 const Course = require('./src/models/courseSchema');
 
@@ -19,7 +19,11 @@ app.use(express.urlencoded({extended: true}));// transform body to key=value for
 
 (async ()=> {
   try {
-    await db.sequelize.sync();
+    await db.sequelize.sync(
+      {
+        alter: true
+      }
+    );
     console.log("DB connection Succcessful.");
   } catch ( err ){
     console.log(err);  
@@ -30,13 +34,22 @@ app.use(express.urlencoded({extended: true}));// transform body to key=value for
 const vehicleRouter = require('./src/modules/vehicleData/routes');
 app.use('/vehicle', vehicleRouter);
 
-//User related API calls
-const userAuthRouter = require('./src/modules/user/routes');
-app.use('/userAuth', userAuthRouter);
+//Assign Vehicle to a User API Call
+const assosiationRouter = require('./src/modules/assosiation/routes');
+app.use('/assign', assosiationRouter);
 
-//Course related API calls
-const courseRouter = require('./src/modules/course/routes');
-app.use('/course', courseRouter)
+
+//////////////MONGO APIS Commenting for now/////////////////////////////
+// //User related API calls
+// const userAuthRouter = require('./src/modules/user/routes');
+// app.use('/userAuth', userAuthRouter);
+
+// //Course related API calls
+// const courseRouter = require('./src/modules/course/routes');
+// app.use('/course', courseRouter)
+////////////////////////////////////////////////////////////////////////
+
+
 
 app.listen(process.env.PORT, () => {
   console.log(`Server Listening at PORT: ${ process.env.PORT }`);

@@ -20,8 +20,20 @@ const sequelize = new Sequelize(
 const db = {};
 db.sequelize = sequelize;
 db.models = {};
-// db.models.User = require('./users')(sequelize, Sequalize.DataTypes);
+
+db.models.User = require('./models/users')(sequelize, Sequelize.DataTypes);
 // db.models.Person = require('./persons')(sequelize, Sequalize.DataTypes);
 db.models.Vehicle = require('./models/vehicle')(sequelize, Sequelize.DataTypes);
+
+db.models.Vehicle.belongsTo(db.models.User, {
+  foreignKey: "user_id",
+  targetKey: "user_id"
+});
+
+db.models.User.hasOne(db.models.Vehicle, {
+  foreignKey: "user_id",
+  sourceKey: "user_id"
+});
+
 
 module.exports = db;

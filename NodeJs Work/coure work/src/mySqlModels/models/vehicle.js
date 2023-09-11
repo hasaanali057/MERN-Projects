@@ -4,13 +4,12 @@ module.exports = (sequelize, Datatypes) => {
   const Vehicle = sequelize.define(
     'Vehicle',
   {
-    vehicle_id: {
-      type: Datatypes.INTEGER,
+    vehicleNumber: {
+      type: Datatypes.STRING,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: false,
       allowNull: false,
     },
-    vehicleNumber: Datatypes.STRING,
     vehicleMake: Datatypes.STRING,
     vehicleModel: Datatypes.INTEGER,
     vehicleVariant: Datatypes.STRING,

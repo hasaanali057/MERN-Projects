@@ -11,15 +11,17 @@ const {
 
 const {
   addVehicle,
-  findVehicle
+  findVehicle,
+  findVehiclebyId,
+  deleteVehiclebyId
 } = require ('./controller');
 
 vehicleRouter.post('/addVehicle', addVehicleMiddleWare, addVehicle);
 
 vehicleRouter.get('/displayAllVehicles', getVehicleMiddleWare, findVehicle);
 
-vehicleRouter.get('/getVehicleByVehicleNumber', getVehicleByIDMiddleWare);
+vehicleRouter.get('/getVehicleByVehicleNumber/:id', getVehicleByIDMiddleWare,findVehiclebyId);
 
-vehicleRouter.delete('/deleteVehicle', deleteVehicleMiddleWare);
+vehicleRouter.delete('/deleteVehicle', deleteVehicleMiddleWare, deleteVehiclebyId);
 
 module.exports = vehicleRouter;
